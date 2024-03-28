@@ -26,7 +26,8 @@ int main()
     std::cin >> seed;
     Xorshift64 xorshift(static_cast<unsigned long long>(seed));
     const int num_random_numbers = 50;
-    for (int i=0; i<num_random_numbers; ++i) {
+    for (int i=0; i<num_random_numbers; ++i)
+    {
         std::cout << xorshift.generate_double();
         std::cout << "\n";
     }
