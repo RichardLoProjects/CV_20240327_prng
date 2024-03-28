@@ -23,6 +23,7 @@ int main()
 {
     // Generate and print some random numbers
     int seed;
+    std::cout << "Please input a positive integer (prng seed value): ";
     std::cin >> seed;
     Xorshift64 xorshift(static_cast<unsigned long long>(seed));
     const int num_random_numbers = 50;
@@ -32,6 +33,7 @@ int main()
         std::cout << "\n";
     }
     std::cin.get();
+    std::cout << "Press any key to exit. ";
     std::cin.get();
     return 0;
 }
