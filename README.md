@@ -11,3 +11,19 @@ Result:
 Managed to find a working compiler.
 Generated some random numbers.
 Measured execution time and approximated pi to 3 significant figures (see attached picture).
+
+Lessons learned:
+Compiler:
+g++ -c src/X.cpp -o obj/X.o // compile without linking
+g++ obj/X1.o obj/X2.o ... obj.Xn.o -o app // link and build, app becomes app.exe
+Git:
+git status
+git remote -v
+git clone [github url]
+git pull //update local to live
+git add //staging
+git commit -m [title] -m [description] //local merge
+git remote add origin [github url] //add url for git-push
+git push -u origin [branch name, like master, main, etc] //push to github
+git config --global user.email "billybob@company.com"
+git config --global user.name "superCoolGithubUsername"
