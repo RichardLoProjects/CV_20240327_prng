@@ -12,6 +12,7 @@ Managed to find a working compiler.
 Generated some random numbers.
 Measured execution time and approximated pi to 3 significant figures (see attached picture).
 
+
 Lessons learned:
 Compiler:
 g++ -c src/X.cpp -o obj/X.o // compile without linking
